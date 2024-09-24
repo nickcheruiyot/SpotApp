@@ -13,6 +13,11 @@ class PlaceViewModel @Inject constructor(
     private val getNearbyPlacesUseCase: GetNearbyPlacesUseCase
 ) : ViewModel()  {
 
+    fun getPlaceById(placeId: String): Place? {
+        // Logic to fetch the place by ID from the repository
+        return repository.getPlaceById(placeId)
+    }
+
     private val _places = MutableStateFlow<List<Place>>(emptyList())
     val places: StateFlow<List<Place>> get() = _places
 

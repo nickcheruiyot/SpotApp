@@ -4,8 +4,9 @@ import com.example.spotapp.Data.Remote.PlaceApiService
 import com.example.spotapp.Domain.Model.Place
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class PlaceRepositoryImpl(
+class PlaceRepositoryImpl@Inject constructor(
     private val placeApiService: PlaceApiService
 ) : PlaceRepository {
 

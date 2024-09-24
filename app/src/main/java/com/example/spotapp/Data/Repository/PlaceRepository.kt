@@ -5,7 +5,7 @@ import com.example.spotapp.Data.Model.PlaceEntity
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class PlaceRepository @Inject constructor(private val placeDao: PlaceDao) {suspend fun savePlace(place: PlaceEntity) {
+open class PlaceRepository @Inject constructor(private val placeDao: PlaceDao) {suspend fun savePlace(place: PlaceEntity) {
     placeDao.insertPlace(place)
 }
 

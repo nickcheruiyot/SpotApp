@@ -10,6 +10,10 @@ plugins {
     id("kotlin-parcelize")
     id ("dagger.hilt.android.plugin")
 
+    id ("kotlin-android")
+
+
+
 
 }
 
@@ -113,4 +117,25 @@ dependencies {
 // Hilt for ViewModel
     implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
     kapt ("androidx.hilt:hilt-compiler:1.0.0")
+
+
+
+    // Hilt
+    implementation ("com.google.dagger:hilt-android:2.44")
+    kapt ("com.google.dagger:hilt-compiler:2.44")
+
+// AndroidX Lifecycle ViewModel extension for Hilt
+    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+
+// Required for ViewModel injection
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+
+// Jetpack Compose integration with Hilt
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
+
+// Required for KAPT if you're using Java 8 features
+    kapt ("androidx.hilt:hilt-compiler:1.0.0")
+
+
+
 }
