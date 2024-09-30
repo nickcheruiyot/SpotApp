@@ -1,7 +1,6 @@
 package com.example.spotapp.di
 
 import com.example.spotapp.Data.Remote.PlaceApiService
-import com.example.spotapp.Data.Repository.PlaceRepository
 import com.example.spotapp.Data.Repository.PlaceRepositoryImpl
 import dagger.Module
 import dagger.Provides
